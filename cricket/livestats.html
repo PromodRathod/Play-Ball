@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<title>Live Stats</title>
+
+<style>
+#mySidenav a {
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#back {
+  top: 20px;
+  background-color: lightgreen;
+  color: black;
+}
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin-left:140px;
+  background-color: white; opacity: 0.9;
+  text-align: left;
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+}
+
+input[type=text], input[type=password] {
+  width: 83%;
+  padding: 15px;
+  margin: 10px 10px 22px 0px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+</style>
+
+
+</head>
+<body style="font-family:'Proxima Nova Soft', 'Helvetica Neue', sans-serif" background="icc.jpg">
+
+<div id="mySidenav" class="sidenav">
+  <a href="updateanysess.html" id="back">Back</a>
+</div>
+
+
+<div class="card">
+<div style="margin:25px"><br>
+
+	<h3>First Session</h3>
+
+
+<form action="liveupdate.php" method="post">
+	MatchID : <br><input type="text" name="mtid" required placeholder="Enter MatchID"><br>
+	<button type="submit" value="Submit" class="submit">Generate Scorecard</button><br><br>
+</form>
+</div></div>
+</body>
+</html>

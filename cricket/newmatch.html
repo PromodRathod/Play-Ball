@@ -1,0 +1,119 @@
+<!doctype html>
+<html>
+<head><title>New Match</title>
+
+<style>
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin-left:140px;
+  background-color: white; opacity: 0.9;
+  text-align: left;
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+}
+
+input[type=text], input[type=password] {
+  width: 83%;
+  padding: 15px;
+  margin: 10px 10px 22px 0px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.reset {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+#mySidenav a {
+  position: absolute;
+  left: -100px;
+  transition: 0.3s;
+
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0px;
+}
+
+#back {
+  top: 20px;
+  background-color: lightgreen;
+  color: black;
+}
+
+
+.reset, .submit {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+
+</style>
+
+</head>
+
+<body style="font-family:'Proxima Nova Soft', 'Helvetica Neue', sans-serif" background="icc.jpg">
+
+<div id="mySidenav" class="sidenav">
+  <a href="AdminInfo.html" id="back">Back</a>
+</div>
+
+<div style="background-color: #000000; margin-left:140px; color:white; opacity:0.8; padding:5px; font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;">
+<h2>New Match</h2>
+</div>
+
+<div class="card">
+<div style="margin:25px"><br>
+
+	<h3>First Session</h3>
+
+
+<form action="createscore.php" method="post">
+	Match Id : <br><input type="text" name="mtid" placeholder="Eg: m111" required><br>
+		  	  <div style="float:left;">
+
+	Team 1 Id : <br><input type="text" style="width:80%; " name="tm1id" placeholder="Eg: 333" required><br>
+	</div>
+		  	  <div style="float:left;">
+
+	Team 2 Id :<br> <input type="text" style="width:80%; margin-right:30px;" name="tm2id" placeholder="Eg: 567" required><br>
+	</div><br><br><br><br><br><br>
+	Batting Team :<br> <input type="text" name="btnm" required><br>
+	Bowling Team : <br><input type="text" name="bwnm"><br>
+	Overs :<br> <input type="text" name="overs" placeholder="1, 2, 5, 10, 20, 50">
+	<button type="submit" value="Submit" class="submit">Submit</button>
+	<button type="Reset" class="reset">Reset</button>
+	<br><br><br><br><br><br>
+</form>
+</div></div>
+</body>
+</html>

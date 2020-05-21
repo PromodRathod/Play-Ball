@@ -1,0 +1,105 @@
+<html>
+<head>
+<title>Admin Info</title>
+<style>
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 500px;
+  margin-left:140px;
+  background-color: white; opacity: 0.9;
+  text-align: left;
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.reset, .end {
+  padding: 14px 20px;
+  background-color: #f44336;
+}
+
+
+
+.reset, .submit {
+  float: left;
+  width: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+#mySidenav a {
+  position: absolute;
+  left: 0px;
+  transition: 0.3s;
+
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+#mySidenav a:hover {
+  left: 0px;
+}
+
+
+#back {
+  top: 20px;
+  background-color: #f44336;
+  color: black;
+}
+
+p {
+  text-align:center;
+
+}
+
+</style>
+<body style="font-family:'Proxima Nova Soft', 'Helvetica Neue', sans-serif" background="icc.jpg">
+
+<div id="mySidenav" class="sidenav">
+  <a href="AdminLogin.html" id="back">Logout</a>
+</div>
+
+<div style="background-color: #000000; color:white; margin-left:140px; opacity:0.8; padding:10px; font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;">
+<h2>Admin Home</h2>
+</div>
+
+<div class="card">
+<div style="margin:25px">
+<br>
+	
+
+
+
+  <a href="newmatch.html" id="submit"><button>New Match</button></a>
+  <p>Start a new match by entering match details</p>
+  <br><br>
+  <a href="updateanysess.html" id="submit"><button>Update Scores</button></a>
+  <p>Update scorecard of ongoing match</p>
+  <br><br>
+  <a href="tmcre.html" id="submit"><button>New Team</button></a>
+  <p>Add new teams to the database</p>
+  <br><br>
+</div>
+
+</body>

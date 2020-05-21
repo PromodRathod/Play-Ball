@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<title>Update User Details</title>
+
+<style>
+
+
+	.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 660px;
+  margin-left:140px;
+  background-color: white; opacity: 0.9;
+  text-align: left;
+  font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;
+}
+
+	
+	
+	input[type=text], input[type=password] {
+  width: 40%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.submit {
+ width:40%;
+ float:right;
+
+}
+.reset, .submit1 {
+ float:left;
+  width: 50%;
+}
+
+/* Extra styles for the cancel button */
+.reset {
+  padding: 14px 20px;
+  float:right;
+  width:40%;
+  background-color: #f44336;
+}
+
+
+.container {
+  padding: 16px;
+  max-width:1000%;
+  align:center;
+}
+
+
+.sidenav a {
+  position: absolute;
+  left: -70px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+}
+
+.sidenav a:hover {
+  left: 0;
+}
+
+
+#back {
+  top: 20px;
+  background-color: lightgreen;
+  color: white;
+}
+
+
+</style>
+<body style="font-family:'Proxima Nova Soft', 'Helvetica Neue', sans-serif" background="icc.jpg">
+
+<div class="sidenav">
+  <a href="userinfo.php" id="back">Back</a>
+</div>
+
+<div style="background-color: #000000; color:white; margin-left:140px; opacity:0.8; padding:10px; font-family: 'Proxima Nova Soft', 'Helvetica Neue', sans-serif;">
+<h2>Update User Details</h2>
+</div>
+
+<div class="card">
+<div style="margin:25px">
+
+
+<div class="container">
+
+<form action="updateinfoofuser.php" method="post" class="modal-content">
+
+	<button type="reset" class="reset">Reset</button><br><br><br><br><br>
+
+	 Name : <br><input type="text" name="nm" placeholder="Akash">
+	 <button type="submit" name="name" value="Change Name" class="submit">Update Name</button><br>
+	 Age : <br><input type="text" name="ag" placeholder="22">
+	 <button type="submit" name="age" value="Change Age" class="submit">Update Age</button><br>
+	 Sex : <br><input type="text" name="sx" placeholder="Male,Female,Other">
+	 <button type="submit" name="sex" value="Change Sex" class="submit">Update Sex</button><br>
+	 State : <br><input type="text" name="st" placeholder="Karnataka">
+	 <button type="submit" name="state" value="Change State" class="submit">Update State</button><br>
+	 Country : <br><input type="text" name="cy" placeholder="India">
+	 <button type="submit" name="country" value="Change Country" class="submit">Update Country</button><br>
+	 Phone no : <br><input type="text" name="pn" placeholder="8989856985">
+	 <button type="submit" name="phone" value="Change Phone no" class="submit">Update Phno.</button><br>
+	 Address : <br><input type="text" name="add" placeholder="doorno,street,area">
+	 <button type="submit" name="address" value="Change Address" class="submit">Update Address</button><br>
+	 Batting : <br><input type="text" name="btsy" placeholder="RBH/LBH">
+	 <button type="submit" name="batting" value="Change Batting Style" class="submit">Update Batting</button><br>
+	 Bowling : <br><input type="text" name="blsy" placeholder="Pace/Spin">
+	 <button type="submit" name="bowling" value="Change Bowling Style" class="submit">Update Bowling</button><br>
+</form>
+</body>
+</html>
+	

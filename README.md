@@ -1,6 +1,6 @@
 # Play-Ball
 Website designed using HTML, CSS, JavaScript, PHP and Mysql. It is a Cricket Management System.
-This can be used for personal use and for small cricket camps to maintain records and the data of each and every single game. It can also be used at the corparate level cricket to maintain data but the task involved in filling the data is little time consuming we are working on it and we may bring a better interface for maintaing records easier.
+This can be used for personal use and for small cricket camps to maintain records and the data of each and every single game. It can also be used at the corparate level cricket to maintain data but the task involved in filling the data is little time consuming we are working on it and we may bring a better interface for maintaing records easier. We have added all the files including the database which we created and used for this web application, the database name is 'dbms' which is included in the cricket folder.
 
 # Snapshots
 ![Screenshot (90)](https://user-images.githubusercontent.com/46192924/82538138-e343d900-9b68-11ea-942a-d3ae8008b6fa.png)
